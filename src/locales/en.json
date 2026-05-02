@@ -1,156 +1,147 @@
 {
   "brand": "Cashmere Coast",
   "nav": {
-    "flow": "The feeling",
+    "flow": "Rhythm",
     "stories": "Frames",
-    "trips": "Journeys",
-    "contact": "Connect",
+    "trips": "Onward",
+    "contact": "Write",
     "menu": "Menu",
     "close": "Close"
   },
   "hero": {
-    "kicker": "Few seats. Plenty of air.",
-    "title": "Quiet where you don’t owe anyone an explanation",
-    "subtitle": "Small women’s gatherings away from noise — no hour-by-hour program, no pressure to perform joy. Soft closeness, calm rhythm, and the sense that you’re not alone.",
-    "cta": "Write with no strings",
-    "imageAlt": "Road and soft light through the window"
+    "kicker": "Rare. For real.",
+    "title": [
+      "Sometimes silence isn’t",
+      "something you need to fix."
+    ],
+    "subtitle": "A small circle of women — no stage, no pitch.",
+    "cta": "Write “want” — we’ll send the rest",
+    "imageAlt": "Road and light"
   },
   "notThis": {
-    "label": "What this isn’t",
-    "title": "Not a tour. Not team building. Not a contest for attention.",
-    "body": "No checklist tourism, no obligation to “open up” on night one. We don’t sell emotions in bulk — we gather rarely and gently so everyone can breathe, sit in silence together, and speak when it feels right.",
-    "closing": "If “nothing to prove” sounds like your speed — this is us."
+    "label": "Not that",
+    "title": "Not an itinerary. Not self-improvement camp. Not “come back transformed.”",
+    "body": "No one will varnish the day as a win.",
+    "closing": "If you’ve been waiting for permission to prove nothing… it might live here."
   },
   "flow": {
-    "label": "The arc of the day",
-    "title": "Not a schedule — a mood",
-    "intro": "The pace follows light and feeling. Below isn’t timing — it’s what first-timers often describe.",
+    "label": "Scenes",
+    "title": "A day you don’t score",
+    "intro": "",
     "steps": [
       {
-        "title": "Morning without a harsh entry",
-        "text": "Coffee, a window, a short walk. No one waits for you to step on stage."
+        "title": "Morning",
+        "text": "Coffee. Window. No one counts your minutes."
       },
       {
-        "title": "Conversations that grow on their own",
-        "text": "Light at first — depth when it comes. No forced “let’s go around the circle.”"
+        "title": "Middle",
+        "text": "Depth — if it grows. If not, fine."
       },
       {
-        "title": "Pauses without guilt",
-        "text": "Step away, rest, skip the group beat — that’s respected. Boundaries are baseline."
-      },
-      {
-        "title": "An evening you don’t grade",
-        "text": "Quiet, laughter, or both. The day ends softly — no debrief on how well you performed."
+        "title": "Evening",
+        "text": "Vanish into a room. Stay. Both allowed."
       }
     ]
   },
   "visual": {
-    "label": "Short frames",
+    "label": "Threads",
     "items": [
       {
-        "caption": "Road without a mission to tick every box. Window down, music low, thoughts settle on their own.",
-        "alt": "View from a car toward the horizon"
+        "caption": "Road without a mission to be everywhere.",
+        "alt": "Horizon through glass"
       },
       {
-        "caption": "Coffee for no reason — just stopping when stopping asks to happen.",
-        "alt": "Hands holding a coffee cup at a table"
+        "caption": "Coffee because the body asked to pause.",
+        "alt": "Cup and table"
       },
       {
-        "caption": "Water nearby: steps, wind, sparse words. You can walk side by side in silence.",
-        "alt": "Calm shoreline and water"
+        "caption": "Water near. Sometimes no words — and it isn’t awkward.",
+        "alt": "Shoreline"
       },
       {
-        "caption": "Light that simplifies everything. Sunset not for content — to exhale.",
-        "alt": "Soft sunset over landscape"
-      },
-      {
-        "caption": "Evening quiet when the inner city finally lowers its volume.",
-        "alt": "Quiet interior in lamplight"
+        "caption": "Light lowers. Something inside loosens too.",
+        "alt": "Sunset"
       }
     ]
   },
   "community": {
-    "label": "People",
-    "title": "You won’t feel alone — and you don’t have to be “on”",
-    "body": "Often it’s those tired of noise who still want the world nearby. High empathy, care for someone else’s pause, and not grading another’s silence — that’s what holds us together.",
-    "note": "If you fear awkwardness: by evening it usually loosens — not because “everyone’s best friends,” but because performing falls away."
+    "label": "Not alone",
+    "title": "There’s life beside you — not generic, but yours right now",
+    "body": "You don’t hear only your footsteps in a void: presence lands without forced laughter.",
+    "note": "That shy knot? It often dissolves not because “we all bonded” — but because the mask stops paying rent."
   },
   "format": {
-    "label": "Format",
-    "title": "Light structure — zero pressure",
+    "label": "Scale",
+    "title": "Few people. Even fewer musts.",
     "items": [
       {
-        "title": "Small group",
-        "text": "Enough to feel company, small enough not to disappear."
+        "title": "Close, not loud",
+        "text": "Not “make friends fast” — just don’t vanish in a crowd."
       },
       {
-        "title": "No performance",
-        "text": "You can be the quiet one, the two-at-the-window talker — both are welcome."
-      },
-      {
-        "title": "A spine, not a cage",
-        "text": "Anchors for where to go and what to eat — without sprinting or falling behind."
+        "title": "Silence isn’t exile",
+        "text": "You can be still in a shared room. That isn’t cold. It’s air."
       }
     ]
   },
   "trips": {
-    "label": "Lines & destinations",
-    "title": "Choose the tone — we’ll describe the rhythm",
+    "label": "What hums",
+    "title": "Not a catalog — echoes",
     "items": [
       {
-        "title": "By the water: ocean weekends",
-        "description": "Walks, wind, slow-tempo talk. When you need to shed urban dryness.",
-        "cta": "Ask for details"
+        "title": "By the water",
+        "description": "Salt, wind, a day without a shape.",
+        "cta": "If it pulls — write"
       },
       {
-        "title": "California-close: mini getaways",
-        "description": "Road, changing scenery, evenings with no mandatory plan. A few days in another life.",
-        "cta": "Ask for details"
+        "title": "A few days, another life",
+        "description": "Road. Light shifts. Evening with no punchline duty.",
+        "cta": "If it pulls — write"
       },
       {
-        "title": "Far & rare: bigger trips",
-        "description": "For wide horizons — with the same soft agreement inside the group.",
-        "cta": "Ask for details"
+        "title": "Farther, rarer",
+        "description": "Wide horizon — quiet voice underneath.",
+        "cta": "If it pulls — write"
       },
       {
-        "title": "Bachelorette: quiet celebration",
-        "description": "No dress contest, no “louder” script. Beauty, ease, closeness.",
-        "cta": "Ask for details"
+        "title": "Bachelorette, stripped",
+        "description": "Beautiful. Low volume. No contest for spark.",
+        "cta": "If it pulls — write"
       },
       {
-        "title": "With children",
-        "description": "When you need air but your child stays right there. Room to be both mother and yourself.",
-        "cta": "Ask for details"
+        "title": "With a child",
+        "description": "Small person near — and you still yourself.",
+        "cta": "If it pulls — write"
       }
     ]
   },
   "testimonials": {
-    "label": "Reflections",
-    "title": "Briefly — how it loosens inside",
+    "label": "Traces",
+    "title": "What the body remembers",
     "items": [
       {
-        "quote": "I feared I’d have to perform. For the first time in a year I didn’t feel watched.",
+        "quote": "I braced to “connect.” I stopped feeling scanned.",
         "name": "Marina",
         "place": "Berlin"
       },
       {
-        "quote": "It wasn’t “flawless logistics” — it was calm. Like time turned down a few notches.",
+        "quote": "Not polished. Quiet. Time turned down a notch — kindly.",
         "name": "Alina",
         "place": "Riga"
       },
       {
-        "quote": "I was quiet half the day and didn’t feel I was doing it wrong. That’s rare — and precious.",
+        "quote": "Half a day silent, unclenched. So rare.",
         "name": "Sophia",
         "place": "Lisbon"
       }
     ]
   },
   "cta": {
-    "label": "Next — personal",
-    "title": "If it lands, write. No noise subscriptions, no noisy follow-ups.",
-    "body": "Say what feels closer: water, road, city, quiet. We’ll answer like humans — only if the format truly fits.",
+    "label": "One move",
+    "title": "If you reached this line — maybe that’s already enough.",
+    "body": "A word. Any. We’ll answer like humans. No push chain.",
     "channels": {
-      "title": "How to reach us",
+      "title": "Or here",
       "instagram": "Instagram / DM",
       "telegram": "Telegram",
       "email": "Email"
@@ -158,18 +149,18 @@
     "form": {
       "name": "Name",
       "email": "Email",
-      "message": "A few words about you and what you need",
-      "interest": "What resonates",
+      "message": "A line or two, if you want",
+      "interest": "What tugs",
       "interestOptions": {
-        "ocean": "By the water",
-        "california": "California / mini trips",
-        "far": "Long-haul journeys",
+        "ocean": "Water",
+        "california": "A few days elsewhere",
+        "far": "Farther",
         "bachelorette": "Bachelorette",
         "kids": "With children",
-        "unsure": "Still figuring it out"
+        "unsure": "Not sure yet"
       },
-      "submit": "Send request",
-      "note": "Demo submit: wire a backend or form service when ready."
+      "submit": "Send “wanting”",
+      "note": ""
     }
   },
   "footer": {

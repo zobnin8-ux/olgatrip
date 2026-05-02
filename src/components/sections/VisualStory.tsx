@@ -11,33 +11,34 @@ export function VisualStory() {
 
   return (
     <section id="stories" className="bg-paper">
-      <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
+      <div className="mx-auto max-w-6xl px-6 pt-16 md:px-10 md:pt-20">
         <Reveal>
-          <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted">
+          <p className="text-[0.65rem] font-medium uppercase tracking-[0.42em] text-mist">
             {t("visual.label")}
           </p>
         </Reveal>
       </div>
 
-      <div className="space-y-24 md:space-y-32">
+      <div className="space-y-36 pt-16 md:space-y-48 md:pt-24">
         {items.map((item, i) => (
-          <Reveal key={item.alt} delay={0.02 * i}>
-            <figure className="mx-auto max-w-[1400px]">
-              <div className="overflow-hidden">
+          <Reveal key={item.alt} delay={0.08 + i * 0.04}>
+            <figure className="mx-auto max-w-[min(92vw,1200px)]">
+              <div className="overflow-hidden rounded-[2px]">
                 <img
                   src={visualImages[i] ?? visualImages[0]}
                   alt={item.alt}
-                  className="h-[55vw] max-h-[80vh] w-full object-cover transition-transform duration-[1.2s] ease-calm hover:scale-[1.02] md:h-[48vw]"
+                  className="aspect-[16/10] w-full object-cover transition-transform duration-[1.4s] ease-calm hover:scale-[1.015] md:aspect-[16/9] md:max-h-[78vh]"
                   loading="lazy"
                 />
               </div>
-              <figcaption className="mx-auto max-w-3xl px-6 pt-8 text-center font-sans text-lg leading-relaxed text-muted md:px-10 md:text-xl">
+              <figcaption className="mx-auto max-w-lg px-2 pt-12 text-center font-sans text-base font-light leading-relaxed text-muted md:pt-16 md:text-lg">
                 {item.caption}
               </figcaption>
             </figure>
           </Reveal>
         ))}
       </div>
+      <div className="h-12 md:h-20" aria-hidden />
     </section>
   );
 }

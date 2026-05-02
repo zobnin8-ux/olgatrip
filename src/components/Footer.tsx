@@ -6,8 +6,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-line bg-paper py-10">
-      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-sm text-muted md:flex-row md:items-center md:px-10">
+    <footer className="border-t border-line/40 bg-paper py-14">
+      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-sm font-light text-mist md:flex-row md:items-center md:px-10">
         <p>
           © {year} {BRAND_NAME}. {t("footer.rights")}.
         </p>

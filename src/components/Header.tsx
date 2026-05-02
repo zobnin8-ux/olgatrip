@@ -18,7 +18,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/60 bg-paper/85 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/40 bg-paper/70 backdrop-blur-[12px]">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 md:gap-6 md:px-10">
         <a
           href="#hero"
@@ -67,7 +67,7 @@ export function Header() {
       </div>
       <div
         id="mobile-nav"
-        className={`border-t border-line/60 bg-paper/95 md:hidden ${open ? "block" : "hidden"}`}
+        className={`border-t border-line/35 bg-paper/80 backdrop-blur-md md:hidden ${open ? "block" : "hidden"}`}
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 text-sm font-medium text-muted">
           {nav.map((item) => (

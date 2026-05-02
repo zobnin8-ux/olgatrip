@@ -7,34 +7,33 @@ export function ExperienceFlow() {
     title: string;
     text: string;
   }>;
+  const intro = t("flow.intro");
 
   return (
-    <section id="flow" className="bg-paper2 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 md:px-10">
+    <section id="flow" className="section-breathe bg-paper2">
+      <div className="mx-auto max-w-3xl px-6 md:px-10">
         <Reveal>
-          <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted">
+          <p className="text-[0.65rem] font-medium uppercase tracking-[0.42em] text-mist">
             {t("flow.label")}
           </p>
         </Reveal>
-        <Reveal delay={0.05}>
-          <h2 className="mt-6 max-w-3xl font-serif text-3xl leading-snug text-ink md:text-5xl">
+        <Reveal delay={0.06}>
+          <h2 className="mt-10 font-serif text-3xl leading-tight text-ink md:text-5xl">
             {t("flow.title")}
           </h2>
         </Reveal>
-        <Reveal delay={0.1}>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            {t("flow.intro")}
-          </p>
-        </Reveal>
+        {intro ? (
+          <Reveal delay={0.1}>
+            <p className="mt-8 max-w-xl text-lg font-light leading-relaxed text-muted">{intro}</p>
+          </Reveal>
+        ) : null}
 
-        <div className="mt-16 space-y-12 md:mt-24 md:space-y-16">
+        <div className="mt-20 space-y-24 md:mt-28 md:space-y-32">
           {steps.map((step, i) => (
-            <Reveal key={step.title} delay={0.12 + 0.05 * i}>
-              <article className="grid gap-4 border-t border-line pt-10 md:grid-cols-12 md:gap-10 md:pt-12">
-                <div className="md:col-span-4">
-                  <p className="font-serif text-2xl text-ink md:text-3xl">{step.title}</p>
-                </div>
-                <p className="md:col-span-7 md:col-start-6 text-base leading-relaxed text-muted md:text-lg">
+            <Reveal key={step.title} delay={0.1 + 0.06 * i}>
+              <article>
+                <p className="font-serif text-2xl text-ink/90 md:text-3xl">{step.title}</p>
+                <p className="mt-5 max-w-lg text-base font-light leading-relaxed text-muted md:text-lg">
                   {step.text}
                 </p>
               </article>

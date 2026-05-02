@@ -4,13 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: "#F6F3EE",
-        paper2: "#EEEAE4",
-        ink: "#2B2824",
-        muted: "#6E6862",
+        paper: "#FAF8F5",
+        paper2: "#F1EDE6",
+        ink: "#3A3633",
+        muted: "#8C8680",
         accent: "#9C6B5C",
         accentDeep: "#7A5347",
-        line: "#E2DDD6",
+        line: "#EAE6E0",
+        mist: "#A39E97",
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', "Georgia", "serif"],

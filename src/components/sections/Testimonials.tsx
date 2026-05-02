@@ -10,29 +10,29 @@ export function Testimonials() {
   }>;
 
   return (
-    <section id="testimonials" className="bg-paper py-24 md:py-32">
+    <section id="testimonials" className="section-breathe bg-paper">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <Reveal>
-          <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted">
+          <p className="text-[0.65rem] font-medium uppercase tracking-[0.42em] text-mist">
             {t("testimonials.label")}
           </p>
         </Reveal>
-        <Reveal delay={0.05}>
-          <h2 className="mt-6 max-w-3xl font-serif text-3xl leading-snug text-ink md:text-5xl">
+        <Reveal delay={0.06}>
+          <h2 className="mt-10 max-w-xl font-serif text-3xl leading-tight text-ink md:text-5xl">
             {t("testimonials.title")}
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-12 md:mt-20 md:grid-cols-3 md:gap-8">
+        <div className="mt-20 grid gap-20 md:mt-28 md:grid-cols-3 md:gap-12">
           {items.map((item, i) => (
-            <Reveal key={item.name + item.place} delay={0.08 * i}>
-              <blockquote className="flex h-full flex-col border-t border-line pt-8">
-                <p className="flex-1 font-serif text-xl leading-relaxed text-ink md:text-2xl">
-                  “{item.quote}”
+            <Reveal key={item.name + item.place} delay={0.1 + 0.07 * i}>
+              <blockquote className="flex h-full flex-col">
+                <p className="flex-1 font-serif text-xl font-light leading-snug text-ink md:text-2xl">
+                  {item.quote}
                 </p>
-                <footer className="mt-8 text-sm text-muted">
-                  <span className="font-medium text-ink">{item.name}</span>
-                  <span className="text-muted"> · {item.place}</span>
+                <footer className="mt-10 text-sm font-light text-mist">
+                  <span className="text-ink">{item.name}</span>
+                  <span> — {item.place}</span>
                 </footer>
               </blockquote>
             </Reveal>

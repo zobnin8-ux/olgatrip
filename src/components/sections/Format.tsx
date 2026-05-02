@@ -9,25 +9,25 @@ export function FormatSection() {
   }>;
 
   return (
-    <section id="format" className="bg-paper py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 md:px-10">
+    <section id="format" className="section-breathe-tight bg-paper">
+      <div className="mx-auto max-w-3xl px-6 md:px-10">
         <Reveal>
-          <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted">
+          <p className="text-[0.65rem] font-medium uppercase tracking-[0.42em] text-mist">
             {t("format.label")}
           </p>
         </Reveal>
-        <Reveal delay={0.05}>
-          <h2 className="mt-6 max-w-3xl font-serif text-3xl leading-snug text-ink md:text-5xl">
+        <Reveal delay={0.06}>
+          <h2 className="mt-10 font-serif text-3xl leading-tight text-ink md:text-5xl">
             {t("format.title")}
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-12 md:mt-24 md:grid-cols-3 md:gap-10">
+        <div className="mt-20 space-y-20 md:mt-28 md:space-y-28">
           {items.map((item, i) => (
-            <Reveal key={item.title} delay={0.08 * i}>
-              <div className="flex h-full flex-col border-t border-line pt-8">
-                <h3 className="font-serif text-2xl text-ink">{item.title}</h3>
-                <p className="mt-4 flex-1 text-base leading-relaxed text-muted">
+            <Reveal key={item.title} delay={0.1 + 0.07 * i}>
+              <div>
+                <h3 className="font-serif text-2xl text-ink md:text-3xl">{item.title}</h3>
+                <p className="mt-5 max-w-lg text-base font-light leading-relaxed text-muted md:text-lg">
                   {item.text}
                 </p>
               </div>
