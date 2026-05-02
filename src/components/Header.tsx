@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router-dom";
 import { contactLinks } from "../data/images";
+import { BRAND_NAME } from "../brand";
 
 const nav = [
   { to: "#flow", key: "flow" as const },
@@ -24,7 +25,7 @@ export function Header() {
           className="font-serif text-xl tracking-tight text-ink transition-colors duration-500 ease-calm hover:text-accent md:text-2xl"
           onClick={() => setOpen(false)}
         >
-          {t("brand")}
+          {BRAND_NAME}
         </a>
         <nav className="hidden items-center gap-8 text-sm font-medium text-muted md:flex">
           {nav.map((item) => (
