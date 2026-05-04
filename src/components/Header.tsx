@@ -22,12 +22,12 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 md:gap-6 md:px-10">
         <a
           href="#hero"
-          className="font-serif text-xl tracking-tight text-ink transition-colors duration-500 ease-calm hover:text-accent md:text-2xl"
+          className="font-serif text-2xl tracking-tight text-ink transition-colors duration-500 ease-calm hover:text-accent md:text-3xl"
           onClick={() => setOpen(false)}
         >
           {BRAND_NAME}
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-muted md:flex">
+        <nav className="hidden items-center gap-8 text-base font-medium text-ink/75 md:flex">
           {nav.map((item) => (
             <a
               key={item.key}
@@ -43,13 +43,13 @@ export function Header() {
             href={contactLinks.instagram}
             target="_blank"
             rel="noreferrer"
-            className="hidden text-sm text-accent transition-opacity hover:opacity-80 sm:inline"
+            className="hidden text-base font-medium text-accent transition-opacity hover:opacity-80 sm:inline"
           >
             DM
           </a>
           <button
             type="button"
-            className="text-sm font-medium text-muted md:hidden"
+            className="text-base font-medium text-ink/75 md:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((v) => !v)}
@@ -58,7 +58,7 @@ export function Header() {
           </button>
           <Link
             to={`/${other}`}
-            className="text-sm font-medium uppercase tracking-widest text-ink transition-colors duration-500 hover:text-accent"
+            className="text-base font-semibold uppercase tracking-widest text-ink transition-colors duration-500 hover:text-accent"
             onClick={() => setOpen(false)}
           >
             {other}
@@ -69,7 +69,7 @@ export function Header() {
         id="mobile-nav"
         className={`border-t border-line/35 bg-paper/80 backdrop-blur-md md:hidden ${open ? "block" : "hidden"}`}
       >
-        <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 text-sm font-medium text-muted">
+        <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 text-base font-medium text-ink/80">
           {nav.map((item) => (
             <a
               key={item.key}

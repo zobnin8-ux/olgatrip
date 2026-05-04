@@ -44,14 +44,14 @@ export function Hero({ imageUrl }: HeroProps) {
 
       <div className="mx-auto w-full max-w-4xl px-6 md:px-10">
         <motion.p
-          className="mb-8 max-w-xl text-[0.65rem] font-medium uppercase tracking-[0.42em] text-paper/75"
+          className="hero-kicker mb-8 max-w-xl"
           {...fadeUp}
           transition={{ duration: 1.35, ease: [0.22, 1, 0.36, 1] }}
         >
           {t("hero.kicker")}
         </motion.p>
 
-        <h1 className="max-w-[14ch] font-serif text-4xl leading-[1.08] tracking-tight text-paper text-balance md:max-w-none md:text-6xl lg:text-7xl">
+        <h1 className="max-w-[14ch] font-serif text-[2.125rem] leading-[1.08] tracking-tight text-paper text-balance sm:text-5xl md:max-w-none md:text-6xl lg:text-7xl">
           {titleLines.map((line, i) => (
             <motion.span
               key={`${i}-${line}`}
@@ -69,7 +69,7 @@ export function Hero({ imageUrl }: HeroProps) {
         </h1>
 
         <motion.p
-          className="mt-10 max-w-md text-base font-light leading-relaxed text-paper/80 md:text-lg"
+          className="mt-10 max-w-2xl text-lg font-normal leading-relaxed text-paper/92 md:text-xl"
           {...fadeUp}
           transition={{ duration: 1.35, delay: 0.52, ease: [0.22, 1, 0.36, 1] }}
         >
@@ -83,7 +83,7 @@ export function Hero({ imageUrl }: HeroProps) {
         >
           <a
             href="#contact"
-            className="group inline-flex border-b border-paper/40 pb-1 text-sm font-normal tracking-wide text-paper transition-colors duration-700 ease-calm hover:border-paper hover:text-paper"
+            className="group inline-flex border-b border-paper/45 pb-1 text-base font-medium tracking-wide text-paper transition-colors duration-700 ease-calm hover:border-paper hover:text-paper md:text-lg"
           >
             <span className="relative">
               {t("hero.cta")}

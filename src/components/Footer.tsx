@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-line/40 bg-paper py-14">
-      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-sm font-light text-mist md:flex-row md:items-center md:px-10">
+      <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-base font-normal text-muted md:flex-row md:items-center md:px-10">
         <p>
           © {year} {BRAND_NAME}. {t("footer.rights")}.
         </p>

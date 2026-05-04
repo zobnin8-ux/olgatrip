@@ -7,7 +7,7 @@ export default {
         paper: "#FAF8F5",
         paper2: "#F1EDE6",
         ink: "#3A3633",
-        muted: "#8C8680",
+        muted: "#6F6A64",
         accent: "#9C6B5C",
         accentDeep: "#7A5347",
         line: "#EAE6E0",

@@ -13,9 +13,7 @@ export function VisualStory() {
     <section id="stories" className="bg-paper">
       <div className="mx-auto max-w-6xl px-6 pt-16 md:px-10 md:pt-20">
         <Reveal>
-          <p className="text-[0.65rem] font-medium uppercase tracking-[0.42em] text-mist">
-            {t("visual.label")}
-          </p>
+          <p className="section-label">{t("visual.label")}</p>
         </Reveal>
       </div>
 
@@ -31,7 +29,7 @@ export function VisualStory() {
                   loading="lazy"
                 />
               </div>
-              <figcaption className="mx-auto max-w-lg px-2 pt-12 text-center font-sans text-base font-light leading-relaxed text-muted md:pt-16 md:text-lg">
+              <figcaption className="mx-auto max-w-2xl px-2 pt-12 text-center font-sans text-lg font-normal leading-relaxed text-ink/85 md:pt-16 md:text-xl">
                 {item.caption}
               </figcaption>
             </figure>
