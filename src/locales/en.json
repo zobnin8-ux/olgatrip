@@ -1,9 +1,14 @@
 {
   "brand": "Cashmere Coast",
+  "meta": {
+    "documentTitle": "Cashmere Coast — Olga Trip"
+  },
   "nav": {
+    "founder": "About Olga",
     "flow": "The feeling",
-    "stories": "Frames",
     "trips": "Journeys",
+    "gallery": "Gallery",
+    "booking": "Book",
     "contact": "Connect",
     "menu": "Menu",
     "close": "Close"
@@ -14,8 +19,22 @@
       "Quiet where you don’t owe anyone an explanation"
     ],
     "subtitle": "Small women’s gatherings away from noise — no hour-by-hour program, no pressure to perform joy. Soft closeness, calm rhythm, and the sense that you’re not alone.",
-    "cta": "Write “want” — we’ll send the rest",
+    "cta": "Write on Telegram",
+    "ctaSecondary": "Read first",
     "imageAlt": "Road and soft light through the window"
+  },
+  "founder": {
+    "label": "Who leads",
+    "name": "Olga",
+    "title": "I don’t collect routes — I collect states of mind",
+    "body": "A few years ago I noticed something simple: the brightest trips don’t happen where the plan is perfect — they happen when the people next to you are the kind you want to be silent with at sunset and laugh with until you cry at dinner. That’s how the club started. We walk along the ocean in Santa Barbara on weekends, drive out to Big Sur and Joshua Tree, and once or twice a year we fly far.",
+    "signoff": "If you’re reading this — you might already be one of us.",
+    "facts": [
+      { "value": "3 years", "label": "of the club" },
+      { "value": "50+", "label": "travelers" },
+      { "value": "Santa Barbara", "label": "and beyond" }
+    ],
+    "imageAlt": "Olga, founder of the club"
   },
   "notThis": {
     "label": "What this isn’t",
@@ -126,9 +145,20 @@
       }
     ]
   },
+  "gallery": {
+    "label": "From trips",
+    "title": "Frames that stayed",
+    "body": "Not a catalog, not a report. Just moments where staying a bit longer felt right."
+  },
+  "booking": {
+    "label": "Closest entry",
+    "title": "An ocean walk in Santa Barbara",
+    "body": "A few hours by the water, without tour pace or the feeling that you need to tick boxes. Choose a time in the calendar — Olga will confirm the details personally.",
+    "note": "Times in the calendar reflect real weekend walk slots."
+  },
   "testimonials": {
     "label": "Reflections",
-    "title": "Briefly — how it loosens inside",
+    "title": "In a few words — what loosens inside",
     "items": [
       {
         "quote": "I feared I’d have to perform. For the first time in a year I didn’t feel watched.",
@@ -149,29 +179,14 @@
   },
   "cta": {
     "label": "Next — personal",
-    "title": "If it lands, write. No noise subscriptions, no noisy follow-ups.",
-    "body": "Say what feels closer: water, road, city, quiet. We’ll answer like humans — only if the format truly fits.",
+    "title": "If it resonates, say hi. No mailing lists, no pushy follow-ups.",
+    "body": "Mention what pulls you in — water, road, city, quiet. We’ll reply like humans, and only if the format really fits.",
     "channels": {
-      "title": "How to reach us",
-      "instagram": "Instagram / DM",
       "telegram": "Telegram",
-      "email": "Email"
-    },
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "A few words about you and what you need",
-      "interest": "What tugs",
-      "interestOptions": {
-        "ocean": "By the water",
-        "california": "California / mini trips",
-        "far": "Long-haul journeys",
-        "bachelorette": "Bachelorette",
-        "kids": "With children",
-        "unsure": "Still figuring it out"
-      },
-      "submit": "Send request",
-      "note": ""
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "facebook": "Facebook community",
+      "note": "Any channel works. Olga replies personally — no funnels, no auto-messages."
     }
   },
   "footer": {

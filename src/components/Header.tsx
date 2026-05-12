@@ -5,9 +5,11 @@ import { contactLinks } from "../data/images";
 import { BRAND_NAME } from "../brand";
 
 const nav = [
+  { to: "#founder", key: "founder" as const },
   { to: "#flow", key: "flow" as const },
-  { to: "#stories", key: "stories" as const },
   { to: "#trips", key: "trips" as const },
+  { to: "#gallery", key: "gallery" as const },
+  { to: "#booking", key: "booking" as const },
   { to: "#contact", key: "contact" as const },
 ];
 

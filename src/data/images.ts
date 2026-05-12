@@ -1,27 +1,39 @@
 /**
- * Replace with production assets / CDN. Warm, candid moods suit palette A.
+ * Local gallery assets under /public/images/gallery. Warm, candid moods suit palette A.
  */
-export const heroImage =
-  "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2400&q=80";
+export const heroImage = "/images/gallery/22.png";
 
+export const founderImage = "/images/olga.png";
+
+/** Matches visual.items order in locales: road, pause, water, sunset, evening quiet */
 export const visualImages = [
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1505118388757-61f7d992848f?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1495616811224-0d0e395f0d5d?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=2000&q=80",
+  "/images/gallery/20.png",
+  "/images/gallery/12.png",
+  "/images/gallery/07.png",
+  "/images/gallery/03.png",
+  "/images/gallery/08.png",
 ];
 
+/** Matches trips.items order: ocean, California mini, far horizon, quiet celebration, with children */
 export const tripImages = [
-  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+  "/images/gallery/28.png",
+  "/images/gallery/31.png",
+  "/images/gallery/10.png",
+  "/images/gallery/14.png",
+  "/images/gallery/18.png",
 ];
+
+/** Full on-site gallery (01.png–40.png). */
+export const galleryImages: string[] = Array.from({ length: 40 }, (_, i) => {
+  const n = String(i + 1).padStart(2, "0");
+  return `/images/gallery/${n}.png`;
+});
 
 export const contactLinks = {
-  instagram: "https://instagram.com/",
-  telegram: "https://t.me/",
-  email: "mailto:hello@example.com",
+  instagram: "https://www.instagram.com/OlgaTrip/",
+  telegram: "https://t.me/OlgaTripp",
+  whatsapp: "https://wa.me/16507046231",
+  facebook: "https://www.facebook.com/groups/1497800268529364/",
 };
+
+export const calendlyUrl = "https://calendly.com/oboykova/new-meeting";

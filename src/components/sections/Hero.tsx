@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { contactLinks } from "../../data/images";
 
 type HeroProps = {
   imageUrl: string;
@@ -79,18 +80,28 @@ export function Hero({ imageUrl }: HeroProps) {
         <motion.div
           {...fadeUp}
           transition={{ duration: 1.25, delay: 0.72, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-14 md:mt-16"
+          className="mt-14 flex flex-col items-start gap-4 md:mt-16 md:flex-row md:items-center md:gap-8"
         >
           <a
-            href="#contact"
-            className="group inline-flex border-b border-paper/45 pb-1 text-base font-medium tracking-wide text-paper transition-colors duration-700 ease-calm hover:border-paper hover:text-paper md:text-lg"
+            href={contactLinks.telegram}
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex items-center gap-2 border border-paper/70 bg-paper/10 px-7 py-4 text-base font-medium tracking-wide text-paper backdrop-blur-[2px] transition-colors duration-700 ease-calm hover:bg-paper hover:text-ink md:text-lg"
           >
-            <span className="relative">
-              {t("hero.cta")}
-              <span className="ml-1 inline-block transition-transform duration-700 ease-calm group-hover:translate-x-0.5">
-                →
-              </span>
+            <span>{t("hero.cta")}</span>
+            <span
+              aria-hidden
+              className="inline-block transition-transform duration-700 ease-calm group-hover:translate-x-0.5"
+            >
+              →
             </span>
+          </a>
+
+          <a
+            href="#founder"
+            className="group inline-flex border-b border-paper/40 pb-1 text-base font-normal tracking-wide text-paper/80 transition-colors duration-700 ease-calm hover:border-paper hover:text-paper md:text-lg"
+          >
+            <span>{t("hero.ctaSecondary")}</span>
           </a>
         </motion.div>
       </div>
