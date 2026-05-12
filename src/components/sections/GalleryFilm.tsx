@@ -2,8 +2,9 @@ import { useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { galleryImages } from "../../data/images";
 
-const ROW_A = galleryImages.slice(0, 20);
-const ROW_B = galleryImages.slice(20, 40);
+const SPLIT = Math.ceil(galleryImages.length / 2);
+const ROW_A = galleryImages.slice(0, SPLIT);
+const ROW_B = galleryImages.slice(SPLIT);
 
 function MarqueeRow({
   images,

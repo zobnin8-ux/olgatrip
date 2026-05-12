@@ -23,11 +23,27 @@ export const tripImages = [
   "/images/gallery/18.png",
 ];
 
-/** Full on-site gallery (01.png–40.png). */
-export const galleryImages: string[] = Array.from({ length: 40 }, (_, i) => {
-  const n = String(i + 1).padStart(2, "0");
-  return `/images/gallery/${n}.png`;
-});
+/**
+ * On-site gallery — 15 frames. Real Olga photos first (r01–r05),
+ * curated stock to follow (10 best from the wider 40-image pool).
+ */
+export const galleryImages: string[] = [
+  "/images/gallery/r01.png",
+  "/images/gallery/r02.png",
+  "/images/gallery/r03.png",
+  "/images/gallery/r04.png",
+  "/images/gallery/r05.png",
+  "/images/gallery/22.png",
+  "/images/gallery/28.png",
+  "/images/gallery/31.png",
+  "/images/gallery/10.png",
+  "/images/gallery/14.png",
+  "/images/gallery/18.png",
+  "/images/gallery/20.png",
+  "/images/gallery/12.png",
+  "/images/gallery/07.png",
+  "/images/gallery/03.png",
+];
 
 export const contactLinks = {
   instagram: "https://www.instagram.com/cashmere_coast_/",
