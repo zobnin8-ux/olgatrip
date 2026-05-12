@@ -1,7 +1,7 @@
 {
   "brand": "Cashmere Coast",
   "meta": {
-    "documentTitle": "Cashmere Coast — Olga Trip"
+    "documentTitle": "Cashmere Coast"
   },
   "nav": {
     "manifest": "Что это за место",
@@ -19,7 +19,7 @@
   },
   "hero": {
     "index": "01 — вход",
-    "operator": "Olga Trip",
+    "operator": "Cashmere Coast",
     "kicker": "Редко. По-настоящему.",
     "title": [
       "Тишина, в которой не нужно объяснять себя"
@@ -40,7 +40,7 @@
   },
   "founder": {
     "index": "03 — основательница",
-    "operator": "Olga Trip",
+    "operator": "Cashmere Coast",
     "label": "Кто ведёт",
     "name": "Ольга",
     "title": "Я собираю не маршруты — я собираю состояния",

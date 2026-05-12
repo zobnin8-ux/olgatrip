@@ -1,7 +1,7 @@
 {
   "brand": "Cashmere Coast",
   "meta": {
-    "documentTitle": "Cashmere Coast — Olga Trip"
+    "documentTitle": "Cashmere Coast"
   },
   "nav": {
     "manifest": "About this place",
@@ -19,7 +19,7 @@
   },
   "hero": {
     "index": "01 — entry",
-    "operator": "Olga Trip",
+    "operator": "Cashmere Coast",
     "kicker": "Rare. For real.",
     "title": [
       "Quiet where you don’t owe anyone an explanation"
@@ -40,7 +40,7 @@
   },
   "founder": {
     "index": "03 — founder",
-    "operator": "Olga Trip",
+    "operator": "Cashmere Coast",
     "label": "Who leads",
     "name": "Olga",
     "title": "I don’t collect routes — I collect states of mind",
