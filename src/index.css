@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  html.lenis {
+    overflow: hidden;
+  }
+
   html {
     scroll-behavior: smooth;
   }

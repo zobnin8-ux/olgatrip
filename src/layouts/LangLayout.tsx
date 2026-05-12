@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Navigate, Outlet, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { isAppLang } from "../i18n/i18n";
+import { SmoothScroll } from "../providers/SmoothScroll";
+
 export function LangLayout() {
   const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
@@ -18,5 +20,9 @@ export function LangLayout() {
     })();
   }, [lang, i18n]);
 
-  return <Outlet />;
+  return (
+    <SmoothScroll>
+      <Outlet />
+    </SmoothScroll>
+  );
 }

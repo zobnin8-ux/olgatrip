@@ -4,8 +4,9 @@
     "documentTitle": "Cashmere Coast — Olga Trip"
   },
   "nav": {
+    "manifest": "Manifest",
     "founder": "About Olga",
-    "flow": "The feeling",
+    "scenes": "Scenes",
     "trips": "Journeys",
     "gallery": "Gallery",
     "booking": "Book",
@@ -13,17 +14,33 @@
     "menu": "Menu",
     "close": "Close"
   },
+  "statement": {
+    "meta": "02 — manifest"
+  },
   "hero": {
+    "index": "01 — entry",
+    "operator": "Olga Trip",
     "kicker": "Rare. For real.",
     "title": [
       "Quiet where you don’t owe anyone an explanation"
     ],
     "subtitle": "Small women’s gatherings away from noise — no hour-by-hour program, no pressure to perform joy. Soft closeness, calm rhythm, and the sense that you’re not alone.",
     "cta": "Write on Telegram",
-    "ctaSecondary": "Read first",
-    "imageAlt": "Road and soft light through the window"
+    "ctaSecondary": "Read the manifest first",
+    "imageAlt": "Ocean, waves, and a distant horizon",
+    "marqueeItems": [
+      "Santa Barbara",
+      "Big Sur",
+      "Joshua Tree",
+      "Pacific Coast",
+      "California",
+      "Desert air",
+      "Slow weekends"
+    ]
   },
   "founder": {
+    "index": "03 — founder",
+    "operator": "Olga Trip",
     "label": "Who leads",
     "name": "Olga",
     "title": "I don’t collect routes — I collect states of mind",
@@ -66,6 +83,7 @@
     ]
   },
   "visual": {
+    "index": "04 — scenes",
     "label": "Short frames",
     "items": [
       {
@@ -115,6 +133,7 @@
     ]
   },
   "trips": {
+    "index": "05 — lines",
     "label": "Lines & destinations",
     "title": "Choose the tone — we’ll describe the rhythm",
     "items": [
@@ -146,17 +165,20 @@
     ]
   },
   "gallery": {
+    "index": "06 — film",
     "label": "From trips",
     "title": "Frames that stayed",
     "body": "Not a catalog, not a report. Just moments where staying a bit longer felt right."
   },
   "booking": {
+    "index": "07 — reserve",
     "label": "Closest entry",
     "title": "An ocean walk in Santa Barbara",
     "body": "A few hours by the water, without tour pace or the feeling that you need to tick boxes. Choose a time in the calendar — Olga will confirm the details personally.",
     "note": "Times in the calendar reflect real weekend walk slots."
   },
   "testimonials": {
+    "index": "08 — reflections",
     "label": "Reflections",
     "title": "In a few words — what loosens inside",
     "items": [
@@ -178,18 +200,23 @@
     ]
   },
   "cta": {
+    "index": "09 — connect",
     "label": "Next — personal",
     "title": "If it resonates, say hi. No mailing lists, no pushy follow-ups.",
     "body": "Mention what pulls you in — water, road, city, quiet. We’ll reply like humans, and only if the format really fits.",
     "channels": {
       "telegram": "Telegram",
+      "telegramMeta": "@OlgaTripp",
       "whatsapp": "WhatsApp",
+      "whatsappMeta": "+1 650 704 6231",
       "instagram": "Instagram",
+      "instagramMeta": "@cashmere_coast_",
       "facebook": "Facebook community",
       "note": "Any channel works. Olga replies personally — no funnels, no auto-messages."
     }
   },
   "footer": {
+    "tagline": "Cashmere Coast — quiet getaways and a club that breathes slower than the city.",
     "rights": "All rights reserved",
     "privacy": "Privacy"
   }

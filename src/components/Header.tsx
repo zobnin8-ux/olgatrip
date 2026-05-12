@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router-dom";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { contactLinks } from "../data/images";
 import { BRAND_NAME } from "../brand";
 
 const nav = [
+  { to: "#manifest", key: "manifest" as const },
   { to: "#founder", key: "founder" as const },
-  { to: "#flow", key: "flow" as const },
+  { to: "#scenes", key: "scenes" as const },
   { to: "#trips", key: "trips" as const },
   { to: "#gallery", key: "gallery" as const },
   { to: "#booking", key: "booking" as const },
@@ -18,23 +20,37 @@ export function Header() {
   const { lang } = useParams();
   const other = lang === "en" ? "ru" : "en";
   const [open, setOpen] = useState(false);
+  const { scrollY } = useScroll();
+  const [solid, setSolid] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (y) => {
+    setSolid(y > 36);
+  });
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line/40 bg-paper/70 backdrop-blur-[12px]">
+    <motion.header
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-500 ease-calm ${
+        solid ? "border-line/50 bg-paper/90 backdrop-blur-xl" : "border-transparent bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 md:gap-6 md:px-10">
         <a
           href="#hero"
-          className="font-serif text-2xl tracking-tight text-ink transition-colors duration-500 ease-calm hover:text-accent md:text-3xl"
+          className={`font-serif text-xl tracking-tight transition-colors duration-500 ease-calm md:text-2xl ${
+            solid ? "text-ink hover:text-accent" : "text-paper hover:text-paper"
+          }`}
           onClick={() => setOpen(false)}
         >
           {BRAND_NAME}
         </a>
-        <nav className="hidden items-center gap-8 text-base font-medium text-ink/75 md:flex">
+        <nav className="hidden items-center gap-7 text-sm font-medium md:flex md:gap-8 md:text-[15px]">
           {nav.map((item) => (
             <a
               key={item.key}
               href={item.to}
-              className="transition-colors duration-500 ease-calm hover:text-ink"
+              className={`transition-colors duration-500 ease-calm ${
+                solid ? "text-ink/70 hover:text-ink" : "text-paper/80 hover:text-paper"
+              }`}
             >
               {t(`nav.${item.key}`)}
             </a>
@@ -45,13 +61,15 @@ export function Header() {
             href={contactLinks.instagram}
             target="_blank"
             rel="noreferrer"
-            className="hidden text-base font-medium text-accent transition-opacity hover:opacity-80 sm:inline"
+            className={`hidden text-sm font-medium transition-opacity hover:opacity-80 sm:inline md:text-[15px] ${
+              solid ? "text-accent" : "text-paper/85"
+            }`}
           >
             DM
           </a>
           <button
             type="button"
-            className="text-base font-medium text-ink/75 md:hidden"
+            className={`text-sm font-medium md:hidden ${solid ? "text-ink/75" : "text-paper/85"}`}
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((v) => !v)}
@@ -60,7 +78,9 @@ export function Header() {
           </button>
           <Link
             to={`/${other}`}
-            className="text-base font-semibold uppercase tracking-widest text-ink transition-colors duration-500 hover:text-accent"
+            className={`text-sm font-semibold uppercase tracking-[0.22em] transition-colors duration-500 md:text-[15px] ${
+              solid ? "text-ink hover:text-accent" : "text-paper hover:text-paper"
+            }`}
             onClick={() => setOpen(false)}
           >
             {other}
@@ -69,14 +89,20 @@ export function Header() {
       </div>
       <div
         id="mobile-nav"
-        className={`border-t border-line/35 bg-paper/80 backdrop-blur-md md:hidden ${open ? "block" : "hidden"}`}
+        className={`border-t backdrop-blur-lg md:hidden ${
+          solid ? "border-line/40 bg-paper/95" : "border-paper/15 bg-ink/55"
+        } ${open ? "block" : "hidden"}`}
       >
-        <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 text-base font-medium text-ink/80">
+        <nav
+          className={`mx-auto flex max-w-6xl flex-col gap-1 px-6 py-4 text-base font-medium ${
+            solid ? "text-ink/85" : "text-paper/90"
+          }`}
+        >
           {nav.map((item) => (
             <a
               key={item.key}
               href={item.to}
-              className="py-2 transition-colors hover:text-ink"
+              className="py-2 transition-colors hover:opacity-80"
               onClick={() => setOpen(false)}
             >
               {t(`nav.${item.key}`)}
@@ -84,6 +110,6 @@ export function Header() {
           ))}
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 }

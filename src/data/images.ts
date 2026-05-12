@@ -37,3 +37,6 @@ export const contactLinks = {
 };
 
 export const calendlyUrl = "https://calendly.com/oboykova/new-meeting";
+
+/** Closing CTA backdrop — editorial coastal mood */
+export const ctaBackdropImage = "/images/gallery/05.png";
