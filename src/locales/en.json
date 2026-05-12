@@ -4,8 +4,8 @@
     "documentTitle": "Cashmere Coast — Olga Trip"
   },
   "nav": {
-    "manifest": "Manifest",
-    "founder": "About Olga",
+    "manifest": "About this place",
+    "founder": "About me",
     "scenes": "Scenes",
     "trips": "Journeys",
     "gallery": "Gallery",
@@ -15,7 +15,7 @@
     "close": "Close"
   },
   "statement": {
-    "meta": "02 — manifest"
+    "meta": "02 — about this place"
   },
   "hero": {
     "index": "01 — entry",
@@ -26,7 +26,7 @@
     ],
     "subtitle": "Small women’s gatherings away from noise — no hour-by-hour program, no pressure to perform joy. Soft closeness, calm rhythm, and the sense that you’re not alone.",
     "cta": "Write on Telegram",
-    "ctaSecondary": "Read the manifest first",
+    "ctaSecondary": "Read about this place first",
     "imageAlt": "Ocean, waves, and a distant horizon",
     "marqueeItems": [
       "Santa Barbara",

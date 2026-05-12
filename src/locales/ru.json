@@ -4,8 +4,8 @@
     "documentTitle": "Cashmere Coast — Olga Trip"
   },
   "nav": {
-    "manifest": "Манифест",
-    "founder": "Об Ольге",
+    "manifest": "Что это за место",
+    "founder": "Обо мне",
     "scenes": "Кадры",
     "trips": "Направления",
     "gallery": "Галерея",
@@ -15,7 +15,7 @@
     "close": "Закрыть"
   },
   "statement": {
-    "meta": "02 — манифест"
+    "meta": "02 — что это за место"
   },
   "hero": {
     "index": "01 — вход",
