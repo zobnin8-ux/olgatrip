@@ -5,7 +5,6 @@ import { PageCurtain } from "../components/motion/PageCurtain";
 import { Hero } from "../components/sections/Hero";
 import { StatementMerged } from "../components/sections/StatementMerged";
 import { FounderEditorial } from "../components/sections/FounderEditorial";
-import { VisualCinematic } from "../components/sections/VisualCinematic";
 import { TripsEditorial } from "../components/sections/TripsEditorial";
 import { GalleryFilm } from "../components/sections/GalleryFilm";
 import { BookingShell } from "../components/sections/BookingShell";
@@ -23,7 +22,6 @@ export function HomePage() {
         <Hero imageUrl={heroImage} />
         <StatementMerged />
         <FounderEditorial />
-        <VisualCinematic />
         <TripsEditorial />
         <GalleryFilm />
         <BookingShell />

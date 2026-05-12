@@ -8,7 +8,6 @@ import { BRAND_NAME } from "../brand";
 const nav = [
   { to: "#manifest", key: "manifest" as const },
   { to: "#founder", key: "founder" as const },
-  { to: "#scenes", key: "scenes" as const },
   { to: "#trips", key: "trips" as const },
   { to: "#gallery", key: "gallery" as const },
   { to: "#booking", key: "booking" as const },
