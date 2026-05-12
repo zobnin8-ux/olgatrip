@@ -7,7 +7,7 @@ type Channel = { key: "telegram" | "whatsapp" | "instagram" | "facebook"; href: 
 
 const channels: Channel[] = [
   { key: "telegram", href: contactLinks.telegram, metaKey: "telegramMeta" },
-  { key: "whatsapp", href: contactLinks.whatsapp, metaKey: "whatsappMeta" },
+  { key: "whatsapp", href: contactLinks.whatsapp },
   { key: "instagram", href: contactLinks.instagram, metaKey: "instagramMeta" },
   { key: "facebook", href: contactLinks.facebook },
 ];
