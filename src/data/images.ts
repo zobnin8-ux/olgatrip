@@ -30,7 +30,7 @@ export const galleryImages: string[] = Array.from({ length: 40 }, (_, i) => {
 });
 
 export const contactLinks = {
-  instagram: "https://www.instagram.com/OlgaTrip/",
+  instagram: "https://www.instagram.com/cashmere_coast_/",
   telegram: "https://t.me/OlgaTripp",
   whatsapp: "https://wa.me/16507046231",
   facebook: "https://www.facebook.com/groups/1497800268529364/",
