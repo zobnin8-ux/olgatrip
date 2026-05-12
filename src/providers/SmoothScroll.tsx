@@ -7,13 +7,18 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (reduce) return;
+    if (typeof window === "undefined") return;
+    const isTouch =
+      window.matchMedia("(pointer: coarse)").matches ||
+      window.matchMedia("(hover: none)").matches;
+    if (isTouch) return;
+
     const root = document.documentElement;
     root.classList.add("lenis", "lenis-smooth");
     const lenis = new Lenis({
       duration: 1.12,
       smoothWheel: true,
       wheelMultiplier: 0.92,
-      touchMultiplier: 1.1,
       anchors: true,
     });
     let raf = 0;
